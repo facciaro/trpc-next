@@ -1,0 +1,5 @@
+{
+  "compilerOptions": { "esModuleInterop": true },
+  "extends": "@repo/typescript-config/base.json",
+  "include": ["src", "index.ts", "transformer.ts", "src/trpc.ts"]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@repo/api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "build-me": "tsup index.ts --format cjs,esm --dts",
+    "dev-me": "npm run build-me -- --watch",
+    "start-me": "node dist/index.cjs"
+  },
+  "dependencies": {
+    "@trpc/client": "^11.0.0-next.320",
+    "@trpc/server": "^11.0.0-next.320",
+    "ioredis": "^5.3.2",
+    "tsup": "^8.0.2",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3"
+  }
+}
